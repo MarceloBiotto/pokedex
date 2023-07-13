@@ -11,20 +11,21 @@
 <body>
 
     <header>
-        <div>
-            <img src="./imagens/pokeapi_256.png" alt="logo pokeapi" class="logo__header">
-        </div>
-        <div id="search-bar">
-            <input id="search-input" type="text" placeholder="Digite o ID ou nome do Pokémon">
-            <button id="search-button">Pesquisar</button>
-        </div>
+        <div class="container__banner">
+                <img src="./imagens/pokeapi_256.png" alt="logo pokeapi" class="logo__header">
+                    
+                    <div id="search-bar">
+                        <input id="search-input" type="text" placeholder="Digite o nome do Pokémon">
+                        <button id="search-button">Pesquisar</button>
+                     </div>
+        </div>             
     </header>
-      <div id="pokemon-info">
-        <h2>Informações do Pokémon</h2>
+    <div id="pokemon-info" class="container__card__pokemon">
+        <h2 class="card__informacao">Informações do Pokémon</h2>
         <div>
-          <img id="pokemon-image" src="" alt="Imagem do Pokémon">
-          <h3 id="pokemon-name"></h3>
-          <p id="pokemon-type"></p>
+          <img id="pokemon-image" src="" alt="Imagem do Pokémon" class="card__imagem">
+          <h3 id="pokemon-name" class="card__nome"></h3>
+          <p id="pokemon-type" class="card__tipo"></p>
         </div>
       </div>
     

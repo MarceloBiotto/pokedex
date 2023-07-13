@@ -1,0 +1,20 @@
+.container__banner{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #e94141;
+}
+
+.logo__header{
+    height: 35px;
+
+                                                      
+
+}
+
+
+.container__card__pokemon{
+    align-items: center;
+    padding: 5px 20px;
+   
+}
