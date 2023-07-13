@@ -32,3 +32,7 @@
 .card__tipo{
     align-items: center;
 }
+
+.card__imagem{
+    max-width: 100px;
+}
