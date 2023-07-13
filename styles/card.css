@@ -1,0 +1,16 @@
+.card__container{
+   background: rgb(86, 202, 202);
+   align-items: center;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.card__informacao{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    padding: 8px 5px;
+    background: var(--cor-branco-principal);
+    flex-direction: column;
+}

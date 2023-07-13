@@ -4,4 +4,13 @@
 
 :root {
     --cor-vermelho-principal: #e94141;
+    --cor-body-principal: #263238;
+    --cor-branco-principal: #FFFFFF;
+}
+
+
+
+body {
+    background: var(--cor-body-principal);
+   
 }
