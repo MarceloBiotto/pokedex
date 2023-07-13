@@ -31,8 +31,12 @@
 }
 .card__tipo{
     align-items: center;
+    border: solid 2px var(--preto-principal);
+    border-radius: 8px;
 }
 
 .card__imagem{
     max-width: 100px;
+    height: 105px;
+    border-radius: 16px ;
 }

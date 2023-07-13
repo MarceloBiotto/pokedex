@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
         document.getElementById('pokemon-name').textContent = pokemonName;
         document.getElementById('pokemon-image').src = pokemonImage;
-        document.getElementById('pokemon-type').textContent = `Tipo: ${pokemonTypes}`;
+        document.getElementById('pokemon-type').textContent = ` ${pokemonTypes}`;
         
       // Define o background color com base no tipo do Pokémon
       const card = document.querySelector('.card__tipo');
