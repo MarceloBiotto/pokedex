@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     padding: 15px 25px;
-    background-color: #e94141;
+    background-color: var(--cor-vermelho-principal);
 }
 
 .logo__header{
@@ -13,8 +13,3 @@
 }
 
 
-.container__card__pokemon{
-    align-items: center;
-    padding: 5px 20px;
-   
-}

@@ -1,1 +1,7 @@
 @import url("styles/header.css");
+@import url("styles/card.css");
+
+
+:root {
+    --cor-vermelho-principal: #e94141;
+}
