@@ -22,11 +22,27 @@ document.addEventListener('DOMContentLoaded', () => {
         const pokemonImage = data.sprites.front_default;
         const pokemonTypes = data.types.map(type => type.type.name).join(', ');
   
-        // Atualiza os elementos HTML com as informações do Pokémon
         document.getElementById('pokemon-name').textContent = pokemonName;
         document.getElementById('pokemon-image').src = pokemonImage;
         document.getElementById('pokemon-type').textContent = `Tipo: ${pokemonTypes}`;
-      })
-      .catch(error => console.log('Ocorreu um erro:', error));
+        
+      // Define o background color com base no tipo do Pokémon
+      const card = document.querySelector('.card__tipo');
+      if (pokemonTypes.includes('fire')) {
+        card.style.backgroundColor = 'red';
+     
+      } else if (pokemonTypes.includes('water')) {
+        card.style.backgroundColor = 'blue';
+      } else if (pokemonTypes.includes('grass')) {
+        card.style.backgroundColor = 'green';
+      } else {
+        card.style.backgroundColor = 'white';
+      }
+    })
+    .catch(error => console.log('Ocorreu um erro:', error));
   }
+   
+
+     
+   
   

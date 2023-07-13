@@ -25,3 +25,10 @@
     flex-direction: column;
     padding: 8px;
 }
+.card__nome{
+    align-items: center;
+    font-size: 28px;
+}
+.card__tipo{
+    align-items: center;
+}
