@@ -1,9 +1,19 @@
+.container__card__pokemon{
+    background-color: var(--branco-secundario);
+}
+
 .card__container{
-   background: rgb(86, 202, 202);
+    width: 94px;
+    margin: 0 auto;
+    padding: 12px 16px;
+    max-width: 1200px;
+   background-color: var(--cinza-principal);
    align-items: center;
    display: flex;
    align-items: center;
    flex-direction: column;
+   border-radius: 8px;
+   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
 
 .card__informacao{
@@ -13,4 +23,5 @@
     padding: 8px 5px;
     background: var(--cor-branco-principal);
     flex-direction: column;
+    padding: 8px;
 }
