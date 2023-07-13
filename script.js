@@ -35,7 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
         card.style.backgroundColor = 'blue';
       } else if (pokemonTypes.includes('grass')) {
         card.style.backgroundColor = 'green';
-      } else {
+        
+      }else if(pokemonTypes.includes('electric')){
+        card.style.backgroundColor='yellow';
+      }
+       else {
         card.style.backgroundColor = 'white';
       }
     })
