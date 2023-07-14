@@ -9,7 +9,7 @@ function getPokemonInfo(searchValue) {
       const pokemonName = data.name;
       const pokemonImage = data.sprites.front_default;
       const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
-
+      console.log(pokemonTypes); /*para printar o tipo do pokemon, teste para tipos duplos */
       document.getElementById("pokemon-name").textContent = pokemonName;
       document.getElementById("pokemon-image").src = pokemonImage;
       document.getElementById("pokemon-type").textContent = ` ${pokemonTypes}`;
@@ -18,7 +18,10 @@ function getPokemonInfo(searchValue) {
       const card = document.querySelector(".card__tipo");
       if (pokemonTypes.includes("fire")) {
         card.style.backgroundColor = "var(--fogo)";
-      } else if (pokemonTypes.includes("water")) {
+      }/* else if(pokemonTypes.includes("rock, ground")){    tipo duplo teste, não esta funcionando para o tipo voador de fogo
+        card.style.backgroundColor= "var(--eletrico)"
+      }*/
+      else if (pokemonTypes.includes("water")) {
         card.style.backgroundColor = "var(--agua)";
       } else if (pokemonTypes.includes("grass")) {
         card.style.backgroundColor = "var(--planta)";
@@ -75,6 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  
   previousButton.addEventListener("click", () => {
     if (currentIndex > 1) {
       currentIndex--;
