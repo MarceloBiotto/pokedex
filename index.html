@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokeapi.co</title>
-    <link rel="stylesheet"  href="style.css">
-    <link rel="stylesheet" href="restet.css">
- 
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="restet.css" />
+  </head>
+  <body>
     <header>
-        <div class="container__banner">
-                <img src="./imagens/pokeapi_256.png" alt="logo pokeapi" class="logo__header">
-                    
-                    <div id="search-bar">
-                        <input id="search-input" type="text" placeholder="Digite o nome do Pokémon">
-                        <button id="search-button">Pesquisar</button>
-                     </div>
-        </div>             
+      <div class="container__banner">
+        <img
+          src="./imagens/pokeapi_256.png"
+          alt="logo pokeapi"
+          class="logo__header"
+        />
+
+        <div id="search-bar">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Digite o nome do Pokémon"
+          />
+          <button id="search-button">Pesquisar</button>
+        </div>
+      </div>
     </header>
     <section>
-        <div id="pokemon-info" class="container__card__pokemon">
-            <h2 class="card__informacao">Informações do Pokémon</h2>
-            <div class="card__container">
-                <img id="pokemon-image" src="./imagens/pokebola.png" alt="Imagem do Pokémon" class="card__imagem">
-                <h3 id="pokemon-name" class="card__nome"></h3>
-                <p id="pokemon-type" class="card__tipo"></p>
-            </div>
+      <div id="pokemon-info" class="container__card__pokemon">
+        <h2 class="card__informacao">Informações do Pokémon</h2>
+        <div class="card__container">
+          <img
+            id="pokemon-image"
+            src="./imagens/pokebola.png"
+            alt="Imagem do Pokémon"
+            class="card__imagem"
+          />
+          <h3 id="pokemon-name" class="card__nome"></h3>
+          <p id="pokemon-type" class="card__tipo"></p>
         </div>
+      </div>
     </section>
-    
-      <script src="script.js"></script>
-    
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>

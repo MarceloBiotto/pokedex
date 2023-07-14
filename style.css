@@ -1,19 +1,33 @@
 @import url("styles/header.css");
 @import url("styles/card.css");
 
-
 :root {
-    --cor-vermelho-principal: #e94141;
-    --cor-body-principal: #f5f6f7;
-    --cor-branco-principal: #FFFFFF;
-    --cinza-principal: #97979d;
-    --branco-secundario: #f5f6f7;
-    --preto-principal: #000000;
+  --cor-vermelho-principal: #dc0000;
+  --cor-body-principal: #fff6c3;
+  --cor-branco-principal: #ffffff;
+  --cinza-principal: #ffdb89;
+  --branco-secundario: #fff6c3;
+  --preto-principal: #000000;
+  --inseto: #6b8e23;
+  --sombrio: #4f4f4f;
+  --dragao: #4169e1;
+  --eletrico: #ffff00;
+  --fada: #ff00ff;
+  --lutador: #b22222;
+  --fogo: #ff4500;
+  --voador: #87ceeb;
+  --fantasma: #4b0082;
+  --planta: #3cb371;
+  --terrestre: #f4a460;
+  --gelo: #add8e6;
+  --normal: #dcdcdc;
+  --venenoso: #9932cc;
+  --psiquico: #ff7f50;
+  --pedra: #ffdab9;
+  --aço: #4682b4;
+  --agua: #00bfff;
 }
 
-
-
 body {
-    background: var(--cor-body-principal);
-   
+  background: var(--cor-body-principal);
 }
