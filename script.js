@@ -11,7 +11,7 @@ function getPokemonInfo(searchValue) {
       /*console.log(pokemonStats);*/
       const pokemonName = data.name;
       const pokemonImage = data.sprites.front_default;
-      const pokemonStats = data.stats.map((stat) => stat.stat.name);
+      const pokemonStats = data.stats.map((stat) => stat.stat.name).join(", ");  /*para pegarmos os nomes dos stats*/
       console.log(pokemonStats);
       const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
       console.log(pokemonTypes); /*para printar o tipo do pokemon, teste para tipos duplos */
