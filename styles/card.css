@@ -31,7 +31,7 @@
 }
 .card__tipo {
   align-items: center;
-  border: solid 2px var(--preto-principal);
+  border: solid 0.5px var(--preto-principal);
   border-radius: 8px;
   width: 64px;
   text-align: center;
@@ -41,5 +41,5 @@
   padding-top: 12px;
   max-width: 100px;
   height: 105px;
-  border-radius: 16px;
+  border-radius: 32px;
 }
