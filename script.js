@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   searchButton.addEventListener("click", () => {
     const searchInput = document.getElementById("search-input");
-    const searchValue = searchInput.value.trim();
+    const searchValue = searchInput.value.trim().toLowerCase();
 
     if (searchValue) {
       getPokemonInfo(searchValue);
@@ -56,10 +56,10 @@ function getPokemonInfo(searchValue) {
         card.style.backgroundColor = "var(--terrestre)";
       } else if (pokemonTypes.includes("dragon")) {
         card.style.backgroundColor = "var(--dragao)";
-      } else if (pokemonTypes.includes("Flying")) {
-        card.style.backgroundColor = "var(--voador)";}
-        else if (pokemonTypes.includes("dark")) {
-          card.style.backgroundColor = "var(--sombrio)";
+      } else if (pokemonTypes.includes("flying")) {
+        card.style.backgroundColor = "var(--voador)";
+      } else if (pokemonTypes.includes("dark")) {
+        card.style.backgroundColor = "var(--sombrio)";
       } else {
         card.style.backgroundColor = "white";
       }
