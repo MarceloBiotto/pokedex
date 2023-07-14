@@ -6,13 +6,19 @@ function getPokemonInfo(searchValue) {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
+      /*const pokemonStats = data.stats[0]; */
+      /*console.log(pokemonStats);*/
       const pokemonName = data.name;
       const pokemonImage = data.sprites.front_default;
+      const pokemonStats = data.stats.map((stat) => stat.stat.name);
+      console.log(pokemonStats);
       const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
       console.log(pokemonTypes); /*para printar o tipo do pokemon, teste para tipos duplos */
       document.getElementById("pokemon-name").textContent = pokemonName;
       document.getElementById("pokemon-image").src = pokemonImage;
       document.getElementById("pokemon-type").textContent = ` ${pokemonTypes}`;
+
 
       // Define o background color com base no tipo do Pokémon
       const card = document.querySelector(".card__tipo");
