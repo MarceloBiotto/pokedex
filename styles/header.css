@@ -3,13 +3,18 @@
     justify-content: space-between;
     padding: 15px 25px;
     background-color: var(--cor-vermelho-principal);
+    align-items: center;
+    text-align: center;
 }
 
 .logo__header{
     height: 35px;
+    text-align: center;
+
 
                                                       
-
 }
+
+
 
 
