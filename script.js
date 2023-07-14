@@ -1,16 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const searchButton = document.getElementById("search-button");
-
-  searchButton.addEventListener("click", () => {
-    const searchInput = document.getElementById("search-input");
-    const searchValue = searchInput.value.trim().toLowerCase();
-
-    if (searchValue) {
-      getPokemonInfo(searchValue);
-      searchInput.value = "";
-    }
-  });
-});
+let currentIndex = 1; 
 
 function getPokemonInfo(searchValue) {
   const apiUrl = `https://pokeapi.co/api/v2/pokemon/${searchValue}`;
@@ -66,3 +54,39 @@ function getPokemonInfo(searchValue) {
     })
     .catch((error) => console.log("Ocorreu um erro:", error));
 }
+
+function updatePokemonInfo() {
+  const pokemonIndex = currentIndex.toString();
+  getPokemonInfo(pokemonIndex);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const searchButton = document.getElementById("search-button");
+  const previousButton = document.getElementById("previous-btn");
+  const nextButton = document.getElementById("next-btn");
+
+  searchButton.addEventListener("click", () => {
+    const searchInput = document.getElementById("search-input");
+    const searchValue = searchInput.value.trim().toLowerCase();
+
+    if (searchValue) {
+      getPokemonInfo(searchValue);
+      searchInput.value = "";
+    }
+  });
+
+  previousButton.addEventListener("click", () => {
+    if (currentIndex > 1) {
+      currentIndex--;
+      updatePokemonInfo();
+    }
+  });
+
+  nextButton.addEventListener("click", () => {
+    currentIndex++;
+    updatePokemonInfo();
+  });
+});
+
+
+updatePokemonInfo();

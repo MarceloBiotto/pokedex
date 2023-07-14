@@ -43,3 +43,12 @@
   height: 105px;
   border-radius: 32px;
 }
+.card__botao-next{
+    margin-top: 16px;
+    border-radius: 8px;
+    
+}
+
+.card__botao-prev{
+    border-radius: 8px;
+}
