@@ -1,16 +1,16 @@
 .container__banner{
     display: flex;
     justify-content: space-between;
-    padding: 15px 25px;
+    padding: 15px 15px;
     background-color: var(--cor-vermelho-principal);
     align-items: center;
     text-align: center;
 }
 
 .logo__header{
-    height: 35px;
+    height: 45px;
     text-align: center;
-
+    padding: 8px;
 
                                                       
 }

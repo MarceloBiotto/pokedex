@@ -39,10 +39,17 @@
 
 .card__imagem {
   padding-top: 12px;
-  max-width: 100px;
-  height: 105px;
+  max-width: 115px;
+  height: 115px;
   border-radius: 32px;
+  padding: 8px;
+  transition: transform 0.3s ease;
 }
+
+.card__imagem:hover {
+  transform: scale(1.6);
+}
+
 .card__botao-next{
     margin-top: 16px;
     border-radius: 8px;
