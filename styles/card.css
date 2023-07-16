@@ -179,11 +179,15 @@
   .container__informacoes-pokemon{
     display: flex;
     flex-direction: column;
+
   }
    
    
 .stats{
+  text-align: center;
+  align-items: center;
  display: none;
+
 }
 
 

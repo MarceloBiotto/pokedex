@@ -3,8 +3,15 @@
     width: auto;
     height: 50px;
     background-color: var(--dragao);
-    align-items: center;
+ 
+}
+
+.rodape__informacao{
     text-align: center;
+   align-items: center;
     font-family: var(--fonte-principal);
     color: var(--cor-branco-principal);
+    font-size: 8px;
+    padding: 16px;
+    
 }
