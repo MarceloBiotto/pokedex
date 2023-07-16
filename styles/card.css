@@ -1,5 +1,8 @@
 .container__card__pokemon {
   background-color: var(--branco-secundario);
+  max-width: 400px;
+  max-height: 420px;
+  padding-bottom: 100px;
 }
 
 
