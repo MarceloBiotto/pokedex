@@ -1,7 +1,7 @@
 .rodape{
    margin: 0;
     width: auto;
-    height: 50px;
+    height: auto;
     background-color: var(--dragao);
  
 }
