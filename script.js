@@ -6,11 +6,10 @@ function getPokemonInfo(searchValue) {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      
       const pokemonName = data.name;
       const pokemonImage = data.sprites.front_default;
       const pokemonStats = data.stats;
-      console.log(pokemonStats);
       const baseHP = pokemonStats[0].base_stat; 
       const baseAtk = pokemonStats[1].base_stat; 
       const baseDef = pokemonStats[2].base_stat; 
@@ -52,14 +51,11 @@ function getPokemonInfo(searchValue) {
    
 
       const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
-      console.log(pokemonTypes); /*para printar o tipo do pokemon, teste para tipos duplos */
       document.getElementById("pokemon-name").textContent = pokemonName;
       document.getElementById("pokemon-image").src = pokemonImage;
       document.getElementById("pokemon-type").textContent = ` ${pokemonTypes}`;
 
-       pokemonTypes[0].type;
-       pokemonTypes[1].type;
-   
+  
       const card = document.querySelector(".card__tipo");
       if (pokemonTypes.includes("fire")) {
         card.style.backgroundColor = "var(--fogo)";
