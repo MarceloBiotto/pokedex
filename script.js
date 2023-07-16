@@ -18,7 +18,6 @@ function getPokemonInfo(searchValue) {
       const baseSdef = pokemonStats[4].base_stat; 
       const speed = pokemonStats[5].base_stat; 
 
-      console.log(baseHP,baseAtk,baseDef,baseSpatk,baseSpatk, speed);
 
       document.getElementById("hp").innerHTML = baseHP;
       document.getElementById("atk").innerHTML = baseAtk;
@@ -58,12 +57,12 @@ function getPokemonInfo(searchValue) {
       document.getElementById("pokemon-image").src = pokemonImage;
       document.getElementById("pokemon-type").textContent = ` ${pokemonTypes}`;
 
-
+       pokemonTypes[0].type;
+       pokemonTypes[1].type;
+   
       const card = document.querySelector(".card__tipo");
       if (pokemonTypes.includes("fire")) {
         card.style.backgroundColor = "var(--fogo)";
-      } else if(pokemonTypes.includes("rock, ground")){    
-        card.style.backgroundColor= "var(--eletrico)"
       }
       else if (pokemonTypes.includes("water")) {
         card.style.backgroundColor = "var(--agua)";

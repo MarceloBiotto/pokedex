@@ -1,6 +1,8 @@
 @import url("styles/header.css");
 @import url("styles/card.css");
 
+
+
 :root {
   --cor-vermelho-principal: #dc0000;
   --cor-body-principal: #fff6c3;
@@ -26,6 +28,9 @@
   --pedra: #ffdab9;
   --aço: #4682b4;
   --agua: #00bfff;
+
+  --fonte-principal:'Roboto Mono', monospace;
+  --fonte-secundaria:'Open Sans', sans-serif;
 }
 
 body {
