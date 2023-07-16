@@ -7,17 +7,50 @@ function getPokemonInfo(searchValue) {
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
-      /*const pokemonStats = data.stats[0]; */
-      /*console.log(pokemonStats);*/
       const pokemonName = data.name;
       const pokemonImage = data.sprites.front_default;
-      const pokemonStats = data.stats.map((stat) => stat.stat.name).join(", ");  /*para pegarmos os nomes dos stats*/ 
+      const pokemonStats = data.stats;
       console.log(pokemonStats);
+      const baseHP = pokemonStats[0].base_stat; 
+      const baseAtk = pokemonStats[1].base_stat; 
+      const baseDef = pokemonStats[2].base_stat; 
+      const baseSpatk = pokemonStats[3].base_stat; 
+      const baseSdef = pokemonStats[4].base_stat; 
+      const speed = pokemonStats[5].base_stat; 
+
+      console.log(baseHP,baseAtk,baseDef,baseSpatk,baseSpatk, speed);
+
+      document.getElementById("hp").innerHTML = baseHP;
+      document.getElementById("atk").innerHTML = baseAtk;
+      document.getElementById("def").innerHTML = baseDef;
+      document.getElementById("spAtk").innerHTML = baseSpatk;
+      document.getElementById("spDef").innerHTML = baseSdef;
+      document.getElementById("speed").innerHTML = speed;
       
+      const stats = {
+        hp: 80,
+        atk: 100,
+        def: 70,
+        spAtk: 90,
+        spDef: 80,
+        speed: 110
+      };
       
-      const pokemonBaseStats = Object.values(pokemonStats);
-      console.log(pokemonBaseStats);
+      const maxValue = 250; 
       
+      for (const stat in stats) {
+        const value = stats[stat];
+      
+        const progressBar = document.getElementById(stat);
+        const percentage = (value / maxValue) * 200;
+      
+        progressBar.style.width = `${percentage}%`;
+      }
+      
+
+
+
+   
 
       const pokemonTypes = data.types.map((type) => type.type.name).join(", ");
       console.log(pokemonTypes); /*para printar o tipo do pokemon, teste para tipos duplos */
@@ -26,7 +59,6 @@ function getPokemonInfo(searchValue) {
       document.getElementById("pokemon-type").textContent = ` ${pokemonTypes}`;
 
 
-      // Define o background color com base no tipo do Pokémon
       const card = document.querySelector(".card__tipo");
       if (pokemonTypes.includes("fire")) {
         card.style.backgroundColor = "var(--fogo)";

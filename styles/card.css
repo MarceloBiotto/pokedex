@@ -2,6 +2,13 @@
   background-color: var(--branco-secundario);
 }
 
+
+.container__informacoes-pokemon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .card__container {
   width: 120px;
   margin: 0 auto;
@@ -58,4 +65,53 @@
 
 .card__botao-prev{
     border-radius: 8px;
+}
+
+
+.hp{
+  height: 100%;
+  background-color: var(--cor-vermelho-principal);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.atk{
+  height: 100%;
+  background-color: var(--aço);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.def{
+  height: 100%;
+  background-color: var(--fogo);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.spAtk{
+  height: 100%;
+  background-color: var(--dragao);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.spDef{
+  height: 100%;
+  background-color: var(--psiquico);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.speed{
+  height: 100%;
+  background-color: var(--inseto);
+  margin: 8px;
+  border-radius: 6px;
+  font-size: 16px;
 }
