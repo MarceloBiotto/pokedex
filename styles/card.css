@@ -67,13 +67,44 @@
     border-radius: 8px;
 }
 
+.stats{
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 8px;
+}
+.vida{
+  padding-bottom: 1px;
+}
+.ataque{
+  padding-top: 8px;
+}
+.defesa{
+  padding-top: 6px;
+}
+.especialAtaque{
+  padding-top: 6px;
+}
+.especialDefesa{
+  padding-top: 6px;
+}
+.velocidade{
+  padding-top: 6px;
+}
+
+
+
+
 
 .hp{
   height: 100%;
   background-color: var(--cor-vermelho-principal);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
+
 }
 
 .atk{
@@ -81,7 +112,9 @@
   background-color: var(--aço);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
 }
 
 .def{
@@ -89,7 +122,9 @@
   background-color: var(--fogo);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
 }
 
 .spAtk{
@@ -97,7 +132,9 @@
   background-color: var(--dragao);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
 }
 
 .spDef{
@@ -105,7 +142,9 @@
   background-color: var(--psiquico);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
 }
 
 .speed{
@@ -113,5 +152,7 @@
   background-color: var(--inseto);
   margin: 8px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 14px;
+  color: var(--cor-branco-principal);
+  text-align: center;
 }

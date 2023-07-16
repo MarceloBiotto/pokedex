@@ -27,13 +27,13 @@ function getPokemonInfo(searchValue) {
       document.getElementById("spDef").innerHTML = baseSdef;
       document.getElementById("speed").innerHTML = speed;
       
-      const stats = {
-        hp: 80,
-        atk: 100,
-        def: 70,
-        spAtk: 90,
-        spDef: 80,
-        speed: 110
+      let stats = {
+        hp: baseHP,
+        atk: baseAtk,
+        def: baseDef,
+        spAtk: baseSpatk,
+        spDef: baseSdef,
+        speed: speed
       };
       
       const maxValue = 250; 
