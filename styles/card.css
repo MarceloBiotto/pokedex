@@ -172,7 +172,7 @@
 
 
 
-@media(max-width: 375px){
+@media(max-width: 1024px){
   .container__informacoes-pokemon{
     display: flex;
     flex-direction: column;
